@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charse="Utf-8">
+        <title> Projects Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            body{
+                background-color:rgb(45, 43, 43);
+               
+            }  
+           
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #91accb;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color:#91accb;}
+.bar-4 {width: 30%; height: 18px; background-color: #91accb;}
+.bar-3 {width: 10%; height: 18px; background-color: #91accb;}
+.bar-2 {width: 4%; height: 18px; background-color: #91accb;}
+.bar-1 {width: 15%; height: 18px; background-color: #91accb;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+</style>
+    </head>
+    <body>
+
+        <div class="container">
+            <nav>
+                       
+                        </a>
+                           <ul class="nav justify-content-center">
+                            <li><a href="http://127.0.0.1:5500/HomePage.html">
+                                <img src="./Medical (10).png"height=150 width="250"></li> 
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/HomePage.html" >Home</a></li>
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/About.html" >About </a></li>
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/Clinics.html">Clinics</a></li>
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/ContactPage.html">Contact</a></li>
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/reservation.html" class="col-2"class="active">reservation</a></li>
+                            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/Account.html" class="col-2">Profile</a></li>
+
+                           </ul>       
+            </nav>
+            <px style="color:#91accb;">Discover our network of trusted non-medical clinics, offering exceptional care and convenient online appointment booking.</p>
+
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                    <img class="card-img-top" src="./1.png" alt="Card image" style="width:90%">
+                  <h3>Doctors</h3>
+                  
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                    <img class="card-img-top" src="./question_8750499.png" alt="Card image" style="width:90%">
+                  <h3>Locations</h3>
+                 
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img class="card-img-top" src="./time.png" alt="Card image" style="width:90%">
+                  <h3>Appointments</h3>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img class="card-img-top" src="./1773130.png" alt="Card image" style="width:90%">
+                  <h3>patient information</h3>
+                  
+                </div>
+              </div>
+            </div>
+             <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Appointment Booking </h1>
+                            <p><i class="fa fa-paper-plane"></i></p>
+                            <p><i class="fa fa-phone"></i></p>
+                            <div class="social-icons">
+                                <a href="" class="fa fa-facebook"></a>
+                                <a href="" class="fa fa-twitter"></a>
+                                <a href="" class="fa fa-linkedin"></a>
+                                <a href="" class="fa fa-instagram"></a>
+                            </div>
+                        </div></div>
+                        <div class="col">
+                        <div class="contact-right">
+                            <form action="run.php" method="post">
+                                <input type="text" name ="name" placeholder="Full Name" required>
+                                <input type ="email" name="email" placeholder="Your Email" required>
+                                <input type ="number" name="website" placeholder="Phone Number" required>
+                                <input type ="number" name="comment" placeholder="Age" required>
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option value="0" name="gender">Gender:</option>
+                                        <option value="1" name="gender">Female</option>
+                                        <option value="1" name="gender">male</option>
+                                    </select></div>
+                                <div class="custom-select" style="width:200px;">
+                                <select name="select1">
+                                    <option value="0">Select clinic:</option>
+                                    <option value="1">Light Diet Center</option>
+                                    <option value="2">Dr. Raed M. Abutteen Specialty</option>
+                                    <option value="3">Dermatology Clinics</option>
+                                    <option value="4">Shami Eye Center</option>
+                                    <option value="5">Dr. Ibrahim AbdelJawad Center</option>
+                                    <option value="6">Physio Medic</option>
+                                  </select></div>
+                                  <div class="custom-select" style="width:200px;">
+                                    <select name="select2">
+                                        <option value="0">Select Time:</option>
+                                        <option value="1">8:00-9:00</option>
+                                        <option value="2">8:00-10:00</option>
+                                        <option value="3">10:00-11:00</option>
+                                        <option value="4">11:00-12:00</option>
+                                        <option value="5">13:00-14:00</option>
+                                        <option value="6">14:00-15:00</option>
+                                        <option value="6">15:00-16:00</option>
+                                      </select></div><br>
+                                      <label for="reservation">Select Date </label>
+                                      <input type="date" id="date" name="date">
+                                <textarea name="Message" rows ="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2"><a href="http://127.0.0.1:5500/Clinics.html">Submit</a></button>
+                            </form>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+</script>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+<script>
+  function runCode(e){
+console.log(e);
+e.preventDefault();
+  }
+</script>
+        </body>
+        </html>

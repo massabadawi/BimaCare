@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>User information</title>
+<style>
+   body{
+                background-color:rgb(45, 43, 43);
+               
+            }  
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;}
+  table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+</style>
+  </head>
+
+
+  <body  >
+    <!-- Content container -->
+    <div class="container">
+      <nav>
+       
+
+           <ul class="nav justify-content-center">
+           <li> <a href="http://127.0.0.1:5500/HomePage.html">
+              <img src="./Medical (10).png"height=150 width="250"></li>
+                       </a>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/HomePage.html" >Home</a></li>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/About.html" >About </a></li>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/Clinics.html">Clinics</a></li>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/ContactPage.html">Contact</a></li>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/reservation.html" class="col-2">reservation</a></li>
+            <li style="margin-top: 70px;"><a href="http://127.0.0.1:5500/Account.html" class="col-2"class="active">Profile</a></li>
+           </ul>     
+           <button class="btn"><i class="fa fa-edit"></i>edit</button>  
+           <a href="#" class="notification" >
+            <span >Inbox</span>
+            <span class="badge">3</span>
+          </a>
+</nav>
+    <div class="image-container">
+    <img src="./219969.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%; ">
+     <div class="w3-text-white">
+     <p class="w3-text-white w3-large"><span><strong>Massa Badawi</strong></span></p>
+     <span style="size: 25px;">User information</span>
+     
+      </div>
+      <div class="w3-container">
+        <p style="color: #ffff;"><span style="padding: 7px;"><i style="font-size:24px" class="fa">&#xf10b;</i></span>079234567</p>
+        <p style="color: #ffff;"><span style="padding: 7px;"><i class="fa fa-home  "style="font-size:24px"></span></i>Amman-Jordan</p>
+        <p style="color: #ffff;"><span style="padding: 7px;"><i class="fa fa-user "style="font-size:24px"></span></i>badawimassa87@gmail.com</p>
+
+      
+        <hr>
+
+
+  </div>
+
+</div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Approved Bookings</h2>
+    <p>Al-Shami Eye Center <br>Address: Princess Sumaya Street 53. Amman, Jordan on <span style="color: red">3/6/2024 at 2:00pm</span></p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Pending Bookings</h2>
+    <p>Dr. Ibrahim AbdelJawad Center<br> Address: 30 next seven days on <span style="color: red;">20/6/2024 at 9:00am</span> (Waiting for approval well send you an email ...)</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Rejected Bookings</h2>
+    <p>Your refusal was rejected at the clinic Light Diet Center on <span style="color: red;"> 20/6/2024 at 3:00 </span>due to a conflict with another appointment</p>
+  </div>
+</div>
+<br> <br>
+<table>
+  <tr>
+    <th style="width:50% ;color: #ffff;">Previous reservation </th>
+    <th style="color: #ffff;">Attended Appointment</th>
+    <th style="color: #ffff;">Repeat Appointment Booking</th>
+  </tr>
+  <tr>
+    <td style="color:#91accb;">Light Diet Center</td>
+    <td><i class="fa fa-remove"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td style="color:#91accb;">Dermatology Clinics</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td style="color:#91accb;">Dr. Ibrahim AbdelJawad Center</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+
+</table>
+<br>
+
+<p>
+  <a href="http://127.0.0.1:5500/HomePage.html" class="btn btn-info btn-lg">
+    <span class="glyphicon glyphicon-log-out"></span> Log out
+  </a>
+</p>
+
+  </body>  
+</html>
